@@ -1,9 +1,73 @@
 @charset 'utf-8';
 
 /*-----メインビジュアル-----*/
+.mv_area {
+  position: relative;
+}
+
 .mv_image {
   width: 100%;
 }
+
+.mv_text {
+  font-family: "M PLUS 1";
+  font-weight: 300;
+  font-size: 22px;
+  color: #fff;
+
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.mv_title {
+  font-family: "Train One";
+  font-size: 90px;
+  color: #fff;
+  line-height: 90px;
+
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%) translateY(3%);
+}
+
+/*-------------------- くるくるいったん保留---------------------*/
+.reserve_button {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+}
+
+.text_circle {
+  width: 150px; /*文字サークルの大きさ*/
+  animation: rotateIt 10s linear infinite; /*文字サークルの回転の速さ*/
+}
+
+@keyframes rotateIt {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.text_circle text {
+  font-size: 24px;
+  fill: #fff; /*文字の色*/
+}
+
+.text_circle textPath {
+  letter-spacing: 15px; /*文字の余白*/
+}
+
+.reserve_image {
+  position: absolute;
+  width: 97px;
+  height: 97px;
+  bottom: 20%;
+  right: 17%;
+}
+/*-------------------- くるくるいったん保留(ここまで)---------------------*/
 
 /*------レスポンシブ対応-----*/
 

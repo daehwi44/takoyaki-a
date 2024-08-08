@@ -32,6 +32,12 @@
     <link rel="shortcut icon" href="" />
 
     <!-- Webフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Oooh+Baby&family=Train+One&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@2.0.2/destyle.css" />
@@ -41,8 +47,8 @@
 
   <body>
     <!-- header -->
-    <header class="header wrapper">
-      <img src="./image/logo-1.svg" alt="キャンプイン能勢のロゴ" class="header_logo" />
+    <header class="header wrapper_xl">
+      <img src="./image/header_logo.png" alt="キャンプイン能勢のロゴ" class="header_logo" />
       <nav class="header_nav">
         <ul>
           <li><a href="">ホーム</a></li>
@@ -51,8 +57,6 @@
           <li><a href="">レンタル＆販売アイテム</a></li>
           <li><a href="">よくあるご質問</a></li>
         </ul>
-
-        <button class="nav_button"></button>
       </nav>
     </header>
 
@@ -62,7 +66,27 @@
         <source media="(max-width:768px)" srcset="" />
         <img src="./image/mv_image.jpg" alt="キャンプ場の写真" class="mv_image" />
       </picture>
+      <p class="mv_text">休日にふらっと、澄んだ空気と星空の楽園へ</p>
+      <h1 class="mv_title">CAMP IN NOSE</h1>
+
+      <!-------------------- くるくるいったん保留--------------------->
+
+      <div class="reserve_button">
+        <svg class="text_circle" viewBox="0 0 500 500">
+          <defs>
+            <path id="text_circle" d="M250,50 a200,200 0 0,1 0,400 a200,200 0 0,1 0,-400" />
+          </defs>
+          <text>
+            <textPath xlink:href="#text_circle">
+              Reservation--Reservation--Reservation--Reservation--Reservation--
+            </textPath>
+          </text>
+        </svg>
+        <img src="image/reservation.png" class="reserve_image" />
+      </div>
     </div>
+
+    <!-------------------- くるくるいったん保留(ここまで)--------------------->
 
     <!-- feature -->
     <section class="feature wrapper">
