@@ -44,7 +44,6 @@
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
     <!-- header -->
     <header class="header wrapper_xl">
@@ -60,6 +59,25 @@
       </nav>
     </header>
 
+    <!-------------------- くるくる【いったん保留】--------------------->
+    <div class="reserve_button_area">
+      <svg class="text_circle" viewBox="0 0 500 500">
+        <defs>
+          <path id="text_circle" d="M250,50 a200,200 0 0,1 0,400 a200,200 0 0,1 0,-400" />
+        </defs>
+        <text>
+          <textPath xlink:href="#text_circle">
+            Reservation--Reservation--Reservation--Reservation--Reservation--
+          </textPath>
+        </text>
+      </svg>
+      <div class="reserve_circle"></div>
+      <div class="reserve_content">
+        <p class="reserve_text">ご予約</p>
+        <img class="reserve_image" src="image/calendar.svg" alt="" />
+      </div>
+    </div>
+
     <!-- メインビジュアル -->
     <div class="mv_area">
       <picture>
@@ -68,37 +86,33 @@
       </picture>
       <p class="mv_text">休日にふらっと、澄んだ空気と星空の楽園へ</p>
       <h1 class="mv_title">CAMP IN NOSE</h1>
-
-      <!-------------------- くるくるいったん保留--------------------->
-
-      <div class="reserve_button">
-        <svg class="text_circle" viewBox="0 0 500 500">
-          <defs>
-            <path id="text_circle" d="M250,50 a200,200 0 0,1 0,400 a200,200 0 0,1 0,-400" />
-          </defs>
-          <text>
-            <textPath xlink:href="#text_circle">
-              Reservation--Reservation--Reservation--Reservation--Reservation--
-            </textPath>
-          </text>
-        </svg>
-        <img src="image/reservation.png" class="reserve_image" />
-      </div>
     </div>
 
-    <!-------------------- くるくるいったん保留(ここまで)--------------------->
+    <!-- ３つ並び写真 -->
+    <section class="photos">
+      <div class="photos_container wrapper_xl">
+        <div class="photos_box01">
+          <img src="./image/familycamp_image.png" alt="" />
+        </div>
+        <div class="photos_box02">
+          <img src="./image/friendscamp_image.png" alt="" />
+        </div>
+        <div class="photos_box03">
+          <img src="./image/solocamp_image.png" alt="" />
+        </div>
+      </div>
+    </section>
 
     <!-- feature -->
-    <section class="feature wrapper">
-      <h2 class="feature_title">キャンプイン能勢の魅力</h2>
-      <div class="feature_container">
+    <section class="feature">
+      <div class="feature_title_area">
+        <h2 class="feature_title">キャンプイン能勢の魅力</h2>
+      </div>
+      
         <div class="feature_box"></div>
-
         <div class="feature_box"></div>
-
         <div class="feature_box"></div>
       </div>
-
       <div class="button_area">
         <a href="" class="button">ご利用案内はこちら</a>
       </div>
@@ -107,7 +121,6 @@
     <!-- item -->
     <section class="item wrapper">
       <h2 class="item_title">レンタル＆販売商品</h2>
-
       <div class="button_area">
         <a href="" class="button">レンタル＆販売商品を見る</a>
       </div>
@@ -125,40 +138,35 @@
 
     <!-- about -->
     <section class="about wrapper">
-      <h2 class="about_title">アクセス</h2>
+      <h2 class="about_title">自然に触れて楽しさや感動を感じてほしい</h2>
     </section>
 
     <!-- footer -->
     <footer class="footer">
-      <div class="footer_inner">
-        <div class="footer_box">
-          <p class="footer_title">ホーム</p>
+      <div class="footer_inner wrapper_l">
+        <ul class="footer_list">
+          <li><a href="">ホーム</a></li>
+          <li><a href="">ご利用案内</a></li>
+          <li><a href="">楽しみ方</a></li>
+          <li><a href="">レンタル＆販売アイテム</a></li>
+          <li><a href="">よくあるご質問</a></li>
+          <li><a href="">プライバシーポリシー</a></li>
+        </ul>
+
+        <div class="footer_logo_area">
+          <img src="./image/footer_logo.png" alt="キャンプイン能勢のロゴ" class="footer_logo" />
         </div>
 
-        <div class="footer_box">
-          <p class="footer_title">ご利用案内</p>
-        </div>
+        <p class="footer_company">株式会社キャンプイン</p>
 
-        <div class="footer_box">
-          <p class="footer_title">楽しみ方</p>
-        </div>
-
-        <div class="footer_box">
-          <p class="footer_title">レンタル＆販売アイテム</p>
-        </div>
-
-        <div class="footer_box">
-          <p class="footer_title">よくあるご質問</p>
-        </div>
-        <div class="footer_box">
-          <p class="footer_title">プライバシーポリシー</p>
+        <div class="footer_address_area">
+          <address class="footer_address">
+            〒563-0372 <br />
+            大阪府豊能郡能勢町山辺〇〇　剣尾山（けんぴさん）<br />
+            TEL 06-000-0000<br />
+          </address>
         </div>
       </div>
-      <div class="footer_logo_area">
-        <img src="" alt="キャンプイン能勢のロゴ" class="footer_logo" />
-      </div>
-      <small class="footer_copyright">株式会社　キャンプイン</small>
-      <address></address>
     </footer>
 
     <script src="./js/script.js"></script>

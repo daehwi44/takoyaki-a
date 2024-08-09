@@ -98,27 +98,27 @@ a:hover {
 
 /*-----フッター-----*/
 .footer {
+  background-color: #123c64;
   margin-top: 160px;
-  padding: 60px 0 20px;
+  padding: 110px 0 70px;
 }
 
-.footer_inner {
+.footer_list {
+  width: 100%;
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 
-.footer_box {
-  width: 25%;
-}
-
-.footer_title {
+.footer_list li {
+  color: #fff;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .footer_logo_area {
   display: flex;
   justify-content: center;
-  margin-top: 90px;
+  margin-top: 140px;
 }
 
 .footer_logo {
@@ -126,10 +126,19 @@ a:hover {
   height: auto;
 }
 
-.footer_copyright {
+.footer_company {
+  text-align: center;
+  color: #fff;
+}
+
+.footer_address_area {
   display: flex;
   justify-content: center;
-  margin-top: 90px;
+  margin-top: 31px;
+}
+
+.footer_address {
+  color: #fff;
 }
 
 /*------レスポンシブ対応-----*/

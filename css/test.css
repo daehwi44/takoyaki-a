@@ -1,0 +1,60 @@
+body {
+  background-color: #0a0909;
+}
+
+/*-------------------- くるくるいったん保留---------------------*/
+.reserve_button_area {
+  position: fixed;
+  z-index: 99;
+  right: 5%;
+  bottom: 0;
+}
+
+.text_circle {
+  width: 150px; /*文字サークルの大きさ*/
+  animation: rotateIt 10s linear infinite; /*文字サークルの回転の速さ*/
+}
+
+@keyframes rotateIt {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.text_circle text {
+  font-size: 24px;
+  fill: #fff; /*文字の色*/
+}
+
+.text_circle textPath {
+  letter-spacing: 15px; /*文字の余白*/
+}
+
+.reserve_circle {
+  position: absolute;
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  background: #b57e2d;
+  bottom: 20%;
+  right: 17%;
+}
+
+.reserve_content {
+  position: fixed;
+  text-align: center;
+  z-index: 9999;
+  bottom: 11%;
+  right: 7.9%;
+}
+
+.reserve_text {
+  color: #fff;
+  font-family: "M PLUS 1";
+}
+
+.reserve_image {
+  margin-top: 10px;
+}
+
+/* ---------------------------------------- */

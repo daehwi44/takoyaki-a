@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@2.0.2/destyle.css" />
+    <link rel="stylesheet" href="./css/test.css" />
+  </head>
+  <body>
+    <!-------------------- くるくるいったん保留--------------------->
+    <div class="reserve_button_area">
+      <svg class="text_circle" viewBox="0 0 500 500">
+        <defs>
+          <path id="text_circle" d="M250,50 a200,200 0 0,1 0,400 a200,200 0 0,1 0,-400" />
+        </defs>
+        <text>
+          <textPath xlink:href="#text_circle">
+            Reservation--Reservation--Reservation--Reservation--Reservation--
+          </textPath>
+        </text>
+      </svg>
+      <div class="reserve_circle"></div>
+      <div class="reserve_content">
+        <p class="reserve_text">ご予約</p>
+        <img class="reserve_image" src="image/calendar.svg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
