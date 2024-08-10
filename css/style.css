@@ -30,25 +30,24 @@
 
 .reserve_circle {
   position: absolute;
+  text-align: center;
+  background: #b57e2d;
   width: 97px;
   height: 97px;
   border-radius: 50%;
-  background: #b57e2d;
   bottom: 20%;
   right: 17%;
-}
 
-.reserve_content {
-  position: fixed;
-  text-align: center;
-  z-index: 9999;
-  bottom: 9%;
-  right: 7.9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .reserve_text {
   color: #fff;
   font-family: "M PLUS 1";
+  font-size: 16px;
 }
 
 .reserve_image {
@@ -67,25 +66,25 @@
 .mv_text {
   font-family: "M PLUS 1";
   font-weight: 300;
-  font-size: 22px;
+  font-size: 1.528vw;
   color: #fff;
 
   position: absolute;
-  bottom: 10%;
+  bottom: 12%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
 
 .mv_title {
   font-family: "Train One";
-  font-size: 90px;
+  font-size: 6.25vw;
   color: #fff;
-  line-height: 90px;
+  line-height: 1;
 
   position: absolute;
   bottom: 0%;
   left: 50%;
-  transform: translateX(-50%) translateY(3%);
+  transform: translateX(-50%) translateY(0);
 
   /* 改行回避 */
   white-space: nowrap;
@@ -113,7 +112,7 @@
 .feature_title_area {
   text-align: center;
   color: #fff;
-  font-size: 40px;
+  font-size: 2.78vw;
   font-weight: 700;
   padding-top: 400px;
 }
