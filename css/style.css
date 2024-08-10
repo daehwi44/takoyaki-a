@@ -101,20 +101,43 @@
 
 /*-----feature-----*/
 .feature_title_area {
-  background-image: url(../image/mountain.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  position: relative;
 
-  height: 913px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.feature_title_area {
+.feature_image {
+  width: 60%;
+  height: auto;
+}
+
+.feature_title {
+  position: absolute;
+  bottom: 14%;
+
   text-align: center;
   color: #fff;
   font-size: 2.78vw;
   font-weight: 700;
-  padding-top: 400px;
+}
+
+.feature_blue {
+  position: absolute;
+
+  bottom: -20%;
+}
+
+.feature_container {
+  background-color: #123c64;
+  display: flex;
+}
+
+.feature_box {
+  width: auto;
+  height: 300px;
 }
 
 /*------レスポンシブ対応-----*/
