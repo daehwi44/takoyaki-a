@@ -148,6 +148,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  position: relative; /* 疑似要素の基準点 */
+}
+
+/* 要素間の白線*/
+.feature_box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 107%; /* だいたいできめた */
+  width: 1px;
+  height: 105%;
+  background-color: #ffffff; /* 線の色 */
+}
+
+/* 最後の要素のみ非表示*/
+.feature_box:last-child::after {
+  display: none;
 }
 
 .feature_number {
@@ -170,13 +188,16 @@
 .feature_text {
   margin-top: 35px;
 
-  width: 80%;
-  height: 250px;
+  width: 90%;
 
   font-size: 1.25vw;
   font-weight: 400;
   color: #fff;
   line-height: 1.8;
+}
+
+.feature_box:nth-child(1) .feature_text {
+  padding-bottom: 1.8em; /* 1行分の高さを追加(1番目) */
 }
 
 .feature_image_area {
@@ -192,6 +213,8 @@
   border-radius: 50%;
   object-fit: cover;
   border: #fff solid 1.04vw;
+
+  margin-top: 28px;
 }
 
 .feature_link {
@@ -199,8 +222,157 @@
 
   font-size: 1.389vw;
   font-weight: 700;
+  font-family: "M PLUS 1";
   color: #fff;
   line-height: 1;
+
+  position: relative;
+  padding-right: 20px; /* 矢印のためのスペース */
+
+  transition: color 0.4s;
+}
+
+/*下線の形状*/
+.feature_link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 140%;
+
+  width: 180px;
+  height: 2px;
+  background: #fff;
+  transition: background-color 0.4s;
+}
+
+/*矢印の形状*/
+.feature_link::after {
+  content: "";
+  position: absolute;
+  right: 1%;
+  top: 145%;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #fff;
+
+  transform: translateY(-50%) rotate(45deg); /* 45度回転して矢印の形に */
+  transition: border-color 0.4s;
+}
+
+.feature_link:hover {
+  color: #f0ca91;
+}
+
+.feature_link:hover::before {
+  background-color: #f0ca91; /* 下線の色を変更 */
+}
+
+.feature_link:hover::after {
+  border-color: #f0ca91; /* 矢印の色を変更 */
+}
+
+/*------item-----*/
+
+.item {
+  position: relative;
+
+  /* 仮 */
+  height: 1320px;
+}
+
+.item_road {
+  position: absolute;
+  top: -5%;
+  right: 20%;
+  z-index: -999;
+
+  width: 40%;
+  height: auto;
+}
+
+.item_haikingman {
+  position: absolute;
+  top: 3%;
+  right: 28%;
+
+  width: 7%;
+  height: auto;
+}
+
+.item_tree {
+  position: absolute;
+  top: 0%;
+  right: 13%;
+
+  width: 10%;
+  height: auto;
+}
+
+.item_grass {
+  position: absolute;
+}
+
+.item_title {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+
+  font-family: "M PLUS 1";
+  font-size: 2.083vw;
+  color: #fff;
+  font-weight: 700;
+}
+
+.item_text {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+
+  width: 300px;
+
+  font-family: "M PLUS 1";
+  font-size: 1.25vw;
+  color: #fff;
+  font-weight: 400;
+}
+
+.item .button_area {
+  position: absolute;
+  top: 60%;
+  right: 20%;
+}
+
+/*------access-----*/
+.access {
+  height: 1150px;
+  background-color: #a9a097;
+}
+
+.access_title {
+  font-family: "M PLUS 1";
+  font-size: 2.083vw;
+  color: #fff;
+  font-weight: 700;
+}
+
+/*------contact-----*/
+.contact {
+  height: 850px;
+  background-color: #123c64;
+}
+
+.contact_title {
+  font-family: "M PLUS 1";
+  font-size: 2.083vw;
+  color: #fff;
+  font-weight: 700;
+}
+
+/*------about-----*/
+.about {
+  margin-top: 200px;
+  height: 750px;
+  background-color: #fff;
 }
 
 /*------レスポンシブ対応-----*/

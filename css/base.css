@@ -15,14 +15,6 @@ img {
   height: auto;
 }
 
-a {
-  transition: 0.4s;
-}
-
-a:hover {
-  opacity: 0.2;
-}
-
 /* コンテンツ幅 */
 .wrapper_xl {
   margin-right: auto;
@@ -63,12 +55,20 @@ a:hover {
   line-height: 1;
   color: #fff;
   border-radius: 50px;
+
+  margin-top: 109px;
+  margin-bottom: 95px;
+
+  transition: 0.4s;
+}
+
+.button:hover {
+  opacity: 0.2;
 }
 
 .button_area {
   display: flex;
   justify-content: center;
-  padding: 109px;
 }
 
 /*------ ヘッダー ------*/
