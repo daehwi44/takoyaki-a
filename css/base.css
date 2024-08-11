@@ -56,15 +56,19 @@ a:hover {
 /* ボタン */
 .button {
   display: inline-block;
-  padding: 16px 120px 16px;
-  border: 1px solid #222222;
-  background-color: #fff;
+  padding: 43px 136px 43px;
+  background-color: #b57e2d;
+  font-weight: 700;
+  font-size: 1.39vw;
+  line-height: 1;
+  color: #fff;
+  border-radius: 50px;
 }
 
 .button_area {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  padding: 109px;
 }
 
 /*------ ヘッダー ------*/
