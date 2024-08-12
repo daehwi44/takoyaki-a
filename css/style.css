@@ -371,6 +371,14 @@
   margin-top: 5.83vw;
 }
 
+.item_hiking {
+  position: absolute;
+  top: 30%;
+  right: 45%;
+
+  height: auto;
+}
+
 /*------access-----*/
 .access {
   height: 1150px;
