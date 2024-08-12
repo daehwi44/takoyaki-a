@@ -376,13 +376,48 @@
   top: 30%;
   right: 45%;
 
+  width: 20%;
   height: auto;
 }
 
 /*------access-----*/
 .access {
-  height: 1150px;
+  position: relative;
+
+  height: 79.86vw;
   background-color: #a9a097;
+}
+
+.access_graypath {
+  width: 100%;
+  margin-top: -300px;
+}
+
+.access_car {
+  position: absolute;
+  top: -35%;
+  left: 10%;
+
+  width: 26%;
+  height: auto;
+}
+
+.access_sign {
+  position: absolute;
+  top: -30%;
+  left: 1%;
+
+  width: 12%;
+  height: auto;
+}
+
+.access_smoke {
+  position: absolute;
+  top: -17%;
+  left: 35%;
+
+  width: 22%;
+  height: auto;
 }
 
 .access_title {
@@ -390,12 +425,22 @@
   font-size: 2.083vw;
   color: #fff;
   font-weight: 700;
+
+  text-align: center;
 }
 
 /*------contact-----*/
 .contact {
-  height: 850px;
+  margin-top: 32.99vw;
+
+  height: 59.03vw;
   background-color: #123c64;
+}
+
+.contact_starrysky {
+  margin-top: -200px;
+
+  width: 100%;
 }
 
 .contact_title {
@@ -403,13 +448,50 @@
   font-size: 2.083vw;
   color: #fff;
   font-weight: 700;
+
+  text-align: center;
 }
 
 /*------about-----*/
 .about {
-  margin-top: 200px;
-  height: 750px;
+  margin-top: 13.89vw;
+  height: 52.08vw;
   background-color: #fff;
+  background-image: url(../image/about_image.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.about_container {
+  width: 100%;
+  height: 100%;
+  margin-left: 9.375vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about_title {
+  width: 27.08vw;
+
+  color: #b57e2d;
+  font-family: "M PLUS 1";
+  font-size: 2.083vw;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.about_text {
+  width: 37.29vw;
+  margin-top: 2.083vw;
+
+  color: #b57e2d;
+  font-family: "M PLUS 1";
+  font-size: 1.25vw;
+  font-weight: 400;
+  line-height: 1.8;
 }
 
 /*------レスポンシブ対応-----*/
