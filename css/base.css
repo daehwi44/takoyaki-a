@@ -46,29 +46,30 @@ img {
 }
 
 /* ボタン */
+.button_area {
+  display: flex;
+  justify-content: center;
+}
+
 .button {
   display: inline-block;
-  padding: 43px 136px 43px;
+  padding: 2.99vw 9.44vw;
   background-color: #b57e2d;
   font-weight: 700;
   font-size: 1.39vw;
   line-height: 1;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 3.47vw;
+  font-family: "M PLUS 1";
 
-  margin-top: 109px;
-  margin-bottom: 95px;
+  margin-top: 7.57vw;
+  margin-bottom: 6.6vw;
 
   transition: 0.4s;
 }
 
 .button:hover {
   opacity: 0.2;
-}
-
-.button_area {
-  display: flex;
-  justify-content: center;
 }
 
 /*------ ヘッダー ------*/
