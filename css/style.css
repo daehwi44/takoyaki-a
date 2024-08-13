@@ -96,7 +96,7 @@
 }
 
 .photos_box02 {
-  margin-top: 40px;
+  margin-top: 2.77vw;
 }
 
 /*-----feature-----*/
@@ -142,7 +142,7 @@
 }
 
 .feature_box {
-  margin-top: 80px;
+  margin-top: 5.55vw;
   width: 30%;
 
   display: flex;
@@ -177,7 +177,7 @@
 }
 
 .feature_subtitle {
-  margin-top: 30px;
+  margin-top: 2.083vw;
 
   font-size: 2.083vw;
   font-weight: 700;
@@ -186,7 +186,7 @@
 }
 
 .feature_text {
-  margin-top: 35px;
+  margin-top: 2.43vw;
 
   width: 90%;
 
@@ -201,9 +201,10 @@
 }
 
 .feature_image_area {
-  margin-top: 6px;
+  margin-top: 0.417vw;
 
   width: 22vw; /* ビューポート幅の22%に設定 */
+  height: auto;
   aspect-ratio: 1 / 1; /* 常に1:1の比率を維持 */
 }
 
@@ -214,7 +215,7 @@
   object-fit: cover;
   border: #fff solid 1.04vw;
 
-  margin-top: 28px;
+  margin-top: 1.944vw;
 }
 
 .feature_box:nth-child(3) .feature_image {
@@ -222,7 +223,7 @@
 }
 
 .feature_link {
-  margin-top: 65px;
+  margin-top: 4.513vw;
 
   font-size: 1.389vw;
   font-weight: 700;
@@ -231,7 +232,7 @@
   line-height: 1;
 
   position: relative;
-  padding-right: 20px; /* 矢印のためのスペース */
+  padding-right: 1.388vw; /* 矢印のためのスペース */
 
   transition: color 0.4s;
 }
@@ -241,12 +242,20 @@
   content: "";
   position: absolute;
   right: 0;
-  top: 140%;
+  top: 142%;
 
-  width: 180px;
-  height: 2px;
+  width: 12.8vw;
+  height: 0.1vw;
   background: #fff;
   transition: background-color 0.4s;
+}
+
+.feature_box:nth-child(2) .feature_link::before {
+  width: 19.5vw;
+}
+
+.feature_box:nth-child(3) .feature_link::before {
+  width: 18.3vw;
 }
 
 /*矢印の形状*/
@@ -255,9 +264,9 @@
   position: absolute;
   right: 1%;
   top: 145%;
-  width: 15px;
-  height: 15px;
-  border-top: 2px solid #fff;
+  width: 1.042vw;
+  height: 1.042vw;
+  border-top: 0.139vw solid #fff;
 
   transform: translateY(-50%) rotate(45deg); /* 45度回転して矢印の形に */
   transition: border-color 0.4s;
@@ -389,8 +398,10 @@
 }
 
 .access_graypath {
+  position: absolute;
+  top: -19.7%;
+
   width: 100%;
-  margin-top: -300px;
 }
 
 .access_car {
@@ -431,6 +442,7 @@
 
 /*------contact-----*/
 .contact {
+  position: relative;
   margin-top: 32.99vw;
 
   height: 59.03vw;
@@ -438,7 +450,8 @@
 }
 
 .contact_starrysky {
-  margin-top: -200px;
+  position: absolute;
+  top: -32.5%;
 
   width: 100%;
 }
@@ -452,6 +465,48 @@
   text-align: center;
 }
 
+.contact_circle {
+  position: absolute;
+  text-align: center;
+  background: #b57e2d;
+  width: 249px;
+  height: 249px;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_text {
+  color: #fff;
+  font-family: "M PLUS 1";
+  font-size: 20px;
+}
+
+.contact_icon {
+  margin-top: 10px;
+
+  width: 50px;
+  height: auto;
+}
+
+.contact_circle_area .contact_circle:nth-child(1) {
+  top: 10%;
+  left: 43.5%;
+}
+
+.contact_circle_area .contact_circle:nth-child(2) {
+  top: 40%;
+  left: 15%;
+}
+
+.contact_circle_area .contact_circle:nth-child(3) {
+  top: 50%;
+  right: 15%;
+}
+
 /*------about-----*/
 .about {
   margin-top: 13.89vw;
@@ -459,8 +514,8 @@
   background-color: #fff;
   background-image: url(../image/about_image.png);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
+  background-position: right top;
+  background-size: 70% auto;
 }
 
 .about_container {

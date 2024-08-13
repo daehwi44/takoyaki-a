@@ -19,7 +19,7 @@ img {
 .wrapper_xl {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1280px;
+  max-width: 88.89vw;
   /* 100%では画面サイズをちぢめたときに横の余白が全くないので少し余白を入れるために90％くらいにする */
   width: 90%;
 }
@@ -27,21 +27,21 @@ img {
 .wrapper_l {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1160px;
+  max-width: 80.56vw;
   width: 90%;
 }
 
 .wrapper_m {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1040px;
+  max-width: 72.22vw;
   width: 90%;
 }
 
 .wrapper_s {
   margin-right: auto;
   margin-left: auto;
-  max-width: 880px;
+  max-width: 61.11vw;
   width: 90%;
 }
 
@@ -77,7 +77,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 0;
+  padding: 0.972vw 0;
 }
 
 .header_logo {
@@ -104,8 +104,8 @@ img {
 /*-----フッター-----*/
 .footer {
   background-color: #123c64;
-  margin-top: 160px;
-  padding: 110px 0 70px;
+  margin-top: 11.11vw;
+  padding: 7.639vw 0 4.861vw;
 }
 
 .footer_list {
@@ -123,11 +123,11 @@ img {
 .footer_logo_area {
   display: flex;
   justify-content: center;
-  margin-top: 140px;
+  margin-top: 11.32vw;
 }
 
 .footer_logo {
-  width: 368px;
+  width: 25.56vw;
   height: auto;
 }
 
@@ -139,7 +139,7 @@ img {
 .footer_address_area {
   display: flex;
   justify-content: center;
-  margin-top: 31px;
+  margin-top: 2.153vw;
 }
 
 .footer_address {
