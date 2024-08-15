@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-/*-------------------- くるくる【いったん保留】---------------------*/
+/*-------------------- 予約ボタン---------------------*/
 .reserve_button_area {
   position: fixed;
   z-index: 99;
@@ -68,6 +68,7 @@
   font-weight: 300;
   font-size: 1.528vw;
   color: #fff;
+  z-index: 100;
 
   position: absolute;
   bottom: 12%;
@@ -85,6 +86,7 @@
   bottom: 0%;
   left: 50%;
   transform: translateX(-50%) translateY(0);
+  z-index: 100;
 
   /* 改行回避 */
   white-space: nowrap;
@@ -400,7 +402,6 @@
 .access_graypath {
   position: absolute;
   top: -19.7%;
-
   width: 100%;
 }
 
@@ -440,6 +441,197 @@
   text-align: center;
 }
 
+.access_container {
+  margin: 0 auto;
+}
+
+.access_box01 {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 100px;
+}
+
+.access_map {
+  width: 52.7%;
+  height: 309px;
+}
+
+.access_map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.access_info_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 45%;
+  gap: 10px;
+  margin-left: 28px;
+}
+
+.access_info {
+  color: #fff;
+  font-weight: 400;
+  font-family: "M PLUS 1";
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.access_info_label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19.6%;
+  height: 38px;
+  background-color: #3c7d5a;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.access_info_text {
+  width: 80%;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-left: 7px;
+}
+
+.access_info_text .px-14 {
+  font-size: 14px;
+}
+
+/* route */
+.access_box02 {
+  margin-top: 98px;
+  width: 100%;
+  height: auto;
+}
+
+.access_subtitle {
+  color: #fff;
+  font-weight: 400;
+}
+
+.access_route {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.access_route_left {
+  width: 32%;
+  height: 110px;
+  text-align: center;
+  background-color: #3c7d5a;
+  font-family: "M PLUS 1";
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.access_route_label {
+  display: inline-block;
+  color: #3c7d5a;
+  background-color: #fff;
+  border-radius: 18px;
+  font-size: 18px;
+  padding: 2px 28px;
+}
+
+.access_route_text {
+  color: #fff;
+  font-size: 18px;
+}
+
+.access_route_arrow {
+  width: 36%;
+  text-align: center;
+  font-family: "M PLUS 1";
+  font-weight: 400;
+}
+
+.access_route_minute {
+  font-size: 18px;
+}
+
+.access_route_line {
+  color: #5b3e12;
+  background-color: #fff;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.access_route_right {
+  width: 32%;
+  height: 110px;
+  text-align: center;
+  background-color: #3c7d5a;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.access_route_logo {
+  width: 73%;
+  height: auto;
+}
+
+.access_hyogo {
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+}
+
+.acccess_route_container {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.access_route_box01 {
+  width: 68%;
+}
+
+.access_route .hyogo {
+  width: 100%;
+}
+
+.access_route_left .hyogo {
+  width: 47%;
+}
+
+.access_route_arrow .hyogo {
+  width: 53%;
+}
+
+.access_route_box02 {
+  width: 32%;
+  height: auto;
+  text-align: center;
+  background-color: #3c7d5a;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /*------contact-----*/
 .contact {
   position: relative;
@@ -451,7 +643,7 @@
 
 .contact_starrysky {
   position: absolute;
-  top: -32.5%;
+  top: -32%;
 
   width: 100%;
 }
@@ -469,8 +661,8 @@
   position: absolute;
   text-align: center;
   background: #b57e2d;
-  width: 249px;
-  height: 249px;
+  width: 17.29vw;
+  height: 17.29vw;
   border-radius: 50%;
 
   display: flex;
@@ -482,7 +674,7 @@
 .contact_text {
   color: #fff;
   font-family: "M PLUS 1";
-  font-size: 20px;
+  font-size: 1.25vw;
 }
 
 .contact_icon {
@@ -492,23 +684,84 @@
   height: auto;
 }
 
+.contact_phonenumber {
+  color: #fff;
+  font-family: "M PLUS 1";
+  font-size: 1.25vw;
+}
+
+.contact_receptiontime {
+  color: #fff;
+  font-family: "M PLUS 1";
+  font-size: 0.9vw;
+}
+
 .contact_circle_area .contact_circle:nth-child(1) {
   top: 10%;
-  left: 43.5%;
+  left: 42%;
+}
+
+.contact_circle_area .contact_circle:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  left: 80%;
+  top: 65%;
+  width: 22vw; /* 線の長さ */
+  height: 1.84px; /* 線の太さ */
+  background-color: #b57e2d; /* 線の色 */
+  transform: rotate(35deg); /* 回転角度 */
+  transform-origin: left top; /* 回転の基準点 */
 }
 
 .contact_circle_area .contact_circle:nth-child(2) {
   top: 40%;
   left: 15%;
+
+  z-index: 1000;
+}
+
+.contact_circle_area .contact_circle:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  left: 170%;
+  top: -40%;
+  width: 19vw; /* 線の長さ */
+  height: 1.84px; /* 線の太さ */
+  background-color: #b57e2d; /* 線の色 */
+  transform: rotate(150deg); /* 回転角度 */
+  transform-origin: left top; /* 回転の基準点 */
 }
 
 .contact_circle_area .contact_circle:nth-child(3) {
-  top: 50%;
+  top: 45%;
   right: 15%;
+}
+
+.contact_circle_area .contact_circle:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  left: -250%;
+  top: 30%;
+  width: 45vw; /* 線の長さ */
+  height: 1.84px; /* 線の太さ */
+  background-color: #b57e2d; /* 線の色 */
+  transform: rotate(5deg); /* 回転角度 */
+  transform-origin: left top; /* 回転の基準点 */
+}
+
+.contact_starwatching {
+  position: absolute;
+  top: 59%;
+  left: 15%;
+
+  width: 75%;
+  height: auto;
 }
 
 /*------about-----*/
 .about {
+  position: relative;
+
   margin-top: 13.89vw;
   height: 52.08vw;
   background-color: #fff;
@@ -518,10 +771,19 @@
   background-size: 70% auto;
 }
 
+.about_sun {
+  position: absolute;
+  top: -3%;
+  left: 2%;
+
+  width: 20%;
+  height: auto;
+}
+
 .about_container {
   width: 100%;
   height: 100%;
-  margin-left: 9.375vw;
+  padding-left: 9.375vw;
 
   display: flex;
   flex-direction: column;
@@ -547,6 +809,15 @@
   font-size: 1.25vw;
   font-weight: 400;
   line-height: 1.8;
+}
+
+.about_mountain {
+  position: absolute;
+  bottom: 0%;
+  left: 2%;
+
+  width: 30%;
+  height: auto;
 }
 
 /*------レスポンシブ対応-----*/
