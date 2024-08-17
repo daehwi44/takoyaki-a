@@ -3,13 +3,13 @@
 /*-------------------- 予約ボタン---------------------*/
 .reserve_button_area {
   position: fixed;
-  z-index: 99;
+  z-index: 100;
   right: 5%;
-  bottom: 3%;
+  bottom: 12%;
 }
 
 .text_circle {
-  width: 150px; /*文字サークルの大きさ*/
+  width: 135px; /*文字サークルの大きさ*/
   animation: rotateIt 10s linear infinite; /*文字サークルの回転の速さ*/
 }
 
@@ -20,12 +20,12 @@
 }
 
 .text_circle text {
-  font-size: 24px;
+  font-size: 42.5px;
   fill: #fff; /*文字の色*/
 }
 
 .text_circle textPath {
-  letter-spacing: 15px; /*文字の余白*/
+  letter-spacing: -2px; /*文字の余白*/
 }
 
 .reserve_circle {
@@ -35,8 +35,8 @@
   width: 97px;
   height: 97px;
   border-radius: 50%;
-  bottom: 20%;
-  right: 17%;
+  bottom: 17.5%;
+  right: 13.8%;
 
   display: flex;
   flex-direction: column;
@@ -637,13 +637,13 @@
   position: relative;
   margin-top: 32.99vw;
 
-  height: 59.03vw;
+  height: 60.416vw;
   background-color: #123c64;
 }
 
 .contact_starrysky {
   position: absolute;
-  top: -32%;
+  top: -31%;
 
   width: 100%;
 }
@@ -679,8 +679,12 @@
 
 .contact_icon {
   margin-top: 10px;
-
   width: 50px;
+  height: auto;
+}
+
+.contact_icon.hatena {
+  width: 30px;
   height: auto;
 }
 
@@ -694,6 +698,7 @@
   color: #fff;
   font-family: "M PLUS 1";
   font-size: 0.9vw;
+  margin-top: 10px;
 }
 
 .contact_circle_area .contact_circle:nth-child(1) {
@@ -701,6 +706,7 @@
   left: 42%;
 }
 
+/* 右の線 */
 .contact_circle_area .contact_circle:nth-child(1)::before {
   content: "";
   position: absolute;
@@ -709,52 +715,54 @@
   width: 22vw; /* 線の長さ */
   height: 1.84px; /* 線の太さ */
   background-color: #b57e2d; /* 線の色 */
-  transform: rotate(35deg); /* 回転角度 */
+  transform: rotate(28deg); /* 回転角度 */
   transform-origin: left top; /* 回転の基準点 */
 }
 
 .contact_circle_area .contact_circle:nth-child(2) {
-  top: 40%;
+  top: 25%;
   left: 15%;
 
   z-index: 1000;
 }
 
+/* 左上の線 */
 .contact_circle_area .contact_circle:nth-child(2)::before {
   content: "";
   position: absolute;
   left: 170%;
-  top: -40%;
+  top: 0%;
   width: 19vw; /* 線の長さ */
   height: 1.84px; /* 線の太さ */
   background-color: #b57e2d; /* 線の色 */
-  transform: rotate(150deg); /* 回転角度 */
+  transform: rotate(155deg); /* 回転角度 */
   transform-origin: left top; /* 回転の基準点 */
 }
 
 .contact_circle_area .contact_circle:nth-child(3) {
-  top: 45%;
-  right: 15%;
+  top: 37.5%;
+  right: 13%;
 }
 
+/* 下の線 */
 .contact_circle_area .contact_circle:nth-child(3)::before {
   content: "";
   position: absolute;
   left: -250%;
-  top: 30%;
+  top: 20%;
   width: 45vw; /* 線の長さ */
   height: 1.84px; /* 線の太さ */
   background-color: #b57e2d; /* 線の色 */
-  transform: rotate(5deg); /* 回転角度 */
+  transform: rotate(7deg); /* 回転角度 */
   transform-origin: left top; /* 回転の基準点 */
 }
 
 .contact_starwatching {
   position: absolute;
-  top: 59%;
-  left: 15%;
+  top: 46.5%;
+  left: 0%;
 
-  width: 75%;
+  width: 100%;
   height: auto;
 }
 
