@@ -29,7 +29,7 @@
     <!-- <meta name="twitter:site" content="@XXXXXXXXXXXX" /> -->
 
     <!-- ファビコン -->
-    <link rel="shortcut icon" href="" />
+    <link rel="shortcut icon" href="./image/favicon.ico" />
 
     <!-- Webフォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,22 +47,22 @@
   </head>
 
   <body>
-    <!-- header -->
+    <!-------------------- header -------------------->
     <header class="header wrapper_xl">
       <img src="./image/header_logo.png" alt="キャンプイン能勢のロゴ" class="header_logo" />
       <nav class="header_nav">
         <ul>
-          <li><a href="">ホーム</a></li>
-          <li><a href="">ご利用案内</a></li>
-          <li><a href="">楽しみ方</a></li>
-          <li><a href="">レンタル＆販売アイテム</a></li>
-          <li><a href="">よくあるご質問</a></li>
+          <li><a href="./index.html">ホーム</a></li>
+          <li><a href="./guide/index.html">ご利用案内</a></li>
+          <li><a href="./enjoy/index.html">楽しみ方</a></li>
+          <li><a href="./item/index.html">レンタル＆販売アイテム</a></li>
+          <li><a href="./faq/index.html">よくあるご質問</a></li>
         </ul>
       </nav>
     </header>
 
     <!-------------------- 予約ボタン--------------------->
-    <div class="reserve_button_area">
+    <a href="" class="reserve_button_area">
       <svg class="text_circle" viewBox="0 0 500 500">
         <defs>
           <path id="text_circle" d="M250,50 a200,200 0 0,1 0,400 a200,200 0 0,1 0,-400" />
@@ -78,29 +78,40 @@
         <p class="reserve_text">ご予約</p>
         <img class="reserve_image" src="image/calendar.svg" alt="" />
       </div>
-    </div>
+    </a>
 
-    <!-- メインビジュアル -->
-    <div class="mv_area">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./image/mv_image.jpg" alt="" class="mv_image" /></div>
-          <div class="swiper-slide"><img src="./image/mv_image02.jpg" alt="" class="mv_image" /></div>
-          <div class="swiper-slide"><img src="./image/mv_image03.jpg" alt="" class="mv_image" /></div>
-          <!-- ページネーション -->
-          <div class="swiper-pagination"></div>
-          <!-- ナビゲーションボタン -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
-        </div>
-      </div>
+    <!-------------------- メインビジュアル -------------------->
+    <!-- imgは改行させたら隙間が空いてしまうので注意 -->
+    <div class="mv_area slide">
+      <img src="./image/mv_image.jpg" alt="" class="mv_image" /><img
+        src="./image/mv_image02.jpg"
+        alt=""
+        class="mv_image"
+      /><img src="./image/mv_image03.jpg" alt="" class="mv_image" /><img
+        src="./image/mv_image.jpg"
+        alt=""
+        class="mv_image"
+      />
       <p class="mv_text">休日にふらっと、澄んだ空気と星空の楽園へ</p>
       <h1 class="mv_title">CAMP IN NOSE</h1>
     </div>
 
-    <!-- ３つ並び写真 -->
+    <!-------------------- メインビジュアル(SP)------------------->
+    <div class="sp_mv_area slide">
+      <img src="./image/sp_image/sp_mv_image01.jpg" alt="" class="mv_image" /><img
+        src="./image/sp_image/sp_mv_image02.jpg"
+        alt=""
+        class="mv_image"
+      /><img src="./image/sp_image/sp_mv_image03.jpg" alt="" class="mv_image" /><img
+        src="./image/sp_image/sp_mv_image01.jpg"
+        alt=""
+        class="mv_image"
+      />
+      <p class="mv_text">休日にふらっと、澄んだ空気と星空の楽園へ</p>
+      <h1 class="mv_title">CAMP IN NOSE</h1>
+    </div>
+
+    <!-------------------- ３つ並び写真(PC) -------------------->
     <section class="photos">
       <div class="photos_container wrapper_xl">
         <div class="photos_box01">
@@ -115,59 +126,87 @@
       </div>
     </section>
 
-    <!-- feature -->
+    <!-------------------- ３つ並び写真(SP) -------------------->
+    <section class="sp_photos_wrapper">
+      <ul class="sp_photos">
+        <li class="sp_photos_slide">
+          <img src="./image/sp_image/sp_familycamp_image.png" alt="" />
+        </li>
+        <li class="sp_photos_slide">
+          <img src="./image/sp_image/sp_friendscamp_image.png" alt="" />
+        </li>
+        <li class="sp_photos_slide">
+          <img src="./image/sp_image/sp_solocamp_image.png" alt="" />
+        </li>
+      </ul>
+      <ul class="sp_photos">
+        <li class="sp_photos_slide">
+          <img src="./image/sp_image/sp_familycamp_image.png" alt="" />
+        </li>
+        <li class="sp_photos_slide">
+          <img src="./image/sp_image/sp_friendscamp_image.png" alt="" />
+        </li>
+        <li class="sp_photos_slide">
+          <img src="./image/sp_image/sp_solocamp_image.png" alt="" />
+        </li>
+      </ul>
+    </section>
+
+    <!-------------------- feature -------------------->
     <section class="feature">
-      <div class="feature_title_area">
+      <picture class="feature_title_image_area">
+        <source media="(max-width: 768px)" srcset="./image/sp_image/sp_mountain_image.png" />
         <img class="feature_title_image" src="./image/mountain.png" alt="" />
-        <h2 class="feature_title">キャンプイン能勢の魅力</h2>
+      </picture>
+      <h2 class="feature_title">キャンプイン能勢の魅力</h2>
+      <picture>
+        <source media="(max-width: 768px)" srcset="./image/sp_image/sp_navy_path.png" />
         <img src="./image/blue_path.png" alt="" class="feature_blue" />
+      </picture>
+      <div class="feature_container wrapper_xl">
+        <div class="feature_box">
+          <p class="feature_number">1</p>
+          <h3 class="feature_subtitle">大自然を堪能</h3>
+          <p class="feature_text">
+            鳥の声が響く森。夜空には満点の星。<br />
+            ここには都会の喧騒から離れた大自然が<br />広がっています。<br />
+            自然と触れ合い、自然に包まれること<br />で、心と体をリフレッシュしませんか？
+          </p>
+          <div class="feature_image_area">
+            <img src="./image/feature_image01.jpg" alt="" class="feature_image" />
+          </div>
+          <a href="" class="feature_link">楽しみ方はこちら</a>
+        </div>
+        <div class="feature_box">
+          <p class="feature_number">2</p>
+          <h3 class="feature_subtitle">備品が充実</h3>
+          <p class="feature_text">
+            キャンプはしたいけど準備するものが多いのはちょっと。。。、荷物は少なくまとめたいという方も安心。<br />
+            キャンプイン能勢では、レンタル＆販売商品を数多く取り揃えております。気軽にキャンプを楽しみませんか？
+          </p>
+          <div class="feature_image_area">
+            <img src="./image/feature_image02.jpg" alt="" class="feature_image" />
+          </div>
+          <a href="" class="feature_link">レンタル＆販売商品はこちら</a>
+        </div>
+        <div class="feature_box">
+          <p class="feature_number">3</p>
+          <h3 class="feature_subtitle">わんちゃんも同伴可能</h3>
+          <p class="feature_text">
+            わんちゃんも大切な家族。<br />家族みんなで一緒にキャンプを楽しみたい。そんなあなたの思いを叶えるのがキャンプイン能勢です。<br />大自然の中で、素敵な思い出をつくりませんか？
+          </p>
+          <div class="feature_image_area">
+            <img src="./image/feature_image03.jpg" alt="" class="feature_image" />
+          </div>
+          <a href="" class="feature_link">わんちゃん連れのお客様へ</a>
+        </div>
       </div>
-      <div class="feature_contents_area">
-        <div class="feature_container wrapper_xl">
-          <div class="feature_box">
-            <p class="feature_number">1</p>
-            <h3 class="feature_subtitle">大自然を堪能</h3>
-            <p class="feature_text">
-              鳥の声が響く森。夜空には満点の星。<br />
-              ここには都会の喧騒から離れた大自然が<br />広がっています。<br />
-              自然と触れ合い、自然に包まれること<br />で、心と体をリフレッシュしませんか？
-            </p>
-            <div class="feature_image_area">
-              <img src="./image/feature_image01.jpg" alt="" class="feature_image" />
-            </div>
-            <a href="" class="feature_link">楽しみ方はこちら</a>
-          </div>
-          <div class="feature_box">
-            <p class="feature_number">2</p>
-            <h3 class="feature_subtitle">備品が充実</h3>
-            <p class="feature_text">
-              キャンプはしたいけど準備するものが多いのはちょっと。。。、荷物は少なくまとめたいという方も安心。<br />
-              キャンプイン能勢では、レンタル＆販売商品を数多く取り揃えております。気軽にキャンプを楽しみませんか？
-            </p>
-            <div class="feature_image_area">
-              <img src="./image/feature_image02.jpg" alt="" class="feature_image" />
-            </div>
-            <a href="" class="feature_link">レンタル＆販売商品はこちら</a>
-          </div>
-          <div class="feature_box">
-            <p class="feature_number">3</p>
-            <h3 class="feature_subtitle">わんちゃんも同伴可能</h3>
-            <p class="feature_text">
-              わんちゃんも大切な家族。<br />家族みんなで一緒にキャンプを楽しみたい。そんなあなたの思いを叶えるのがキャンプイン能勢です。<br />大自然の中で、素敵な思い出をつくりませんか？
-            </p>
-            <div class="feature_image_area">
-              <img src="./image/feature_image03.jpg" alt="" class="feature_image" />
-            </div>
-            <a href="" class="feature_link">わんちゃんづれのお客様へ</a>
-          </div>
-        </div>
-        <div class="button_area">
-          <a href="" class="button">ご利用案内はこちら</a>
-        </div>
+      <div class="button_area">
+        <a href="" class="button">ご利用案内はこちら</a>
       </div>
     </section>
 
-    <!-- item -->
+    <!-------------------- item -------------------->
     <section class="item">
       <img src="./image/road.png" alt="" class="item_road" />
       <img src="./image/haiking_man.gif" alt="" class="item_haikingman" />
@@ -200,12 +239,14 @@
       <img src="./image/item_image_hiking.png" alt="" class="item_hiking" />
     </section>
 
-    <!-- access -->
+    <!-------------------- access -------------------->
     <section class="access">
-      <img src="./image/graypath.png" alt="" class="access_graypath" />
-      <img src="./image/acccess_image_sign.png" alt="" class="access_sign" />
-      <img src="./image/車.gif" alt="" class="access_car" />
-      <img src="./image/acccess_image_smoke.png" alt="" class="access_smoke" />
+      <div class="access_deco">
+        <img src="./image/graypath.png" alt="" class="access_graypath" />
+        <img src="./image/acccess_image_sign.png" alt="" class="access_sign" />
+        <img src="./image/車.gif" alt="" class="access_car" />
+        <img src="./image/acccess_image_smoke.png" alt="" class="access_smoke" />
+      </div>
       <h2 class="access_title">アクセス</h2>
 
       <div class="access_container wrapper_s">
@@ -237,7 +278,7 @@
             <!-- TEL -->
             <div class="access_info">
               <div class="access_info_label">TEL</div>
-              <p class="access_info_text">06-000-0000</p>
+              <telephone class="access_info_text">06-000-0000</telephone>
             </div>
             <!-- 駐車場 -->
             <div class="access_info">
@@ -251,7 +292,6 @@
             </div>
           </div>
         </div>
-
         <div class="access_box02">
           <div class="access_osaka">
             <p class="access_subtitle">大阪方面からお車でお越しの方向け</p>
@@ -269,7 +309,6 @@
               </div>
             </div>
           </div>
-
           <div class="access_hyogo">
             <p class="access_subtitle">兵庫方面からお車でお越しの方向け</p>
             <div class="acccess_route_container">
@@ -304,34 +343,30 @@
       </div>
     </section>
 
-    <!-- contact -->
+    <!-------------------- contact -------------------->
     <section class="contact">
       <img src="./image/starrysky_image.png" alt="" class="contact_starrysky" />
       <h2 class="contact_title">お問い合わせ</h2>
       <div class="contact_circle_area">
-        <div class="contact_circle">
-          <a href="">
-            <p class="contact_text">よくある<br />ご質問</p>
-            <img class="contact_icon hatena" src="image/question_icon.png" alt="" />
-          </a>
-        </div>
-        <div class="contact_circle">
-          <a href="">
-            <p class="contact_text">予約<br />お問い合わせ</p>
-            <img class="contact_icon" src="image/calendar.svg" alt="" />
-          </a>
-        </div>
-        <div class="contact_circle">
-          <p class="contact_text">電話番号</p>
-          <p class="contact_phonenumber">06-000-0000</p>
-          <img class="contact_icon" src="image/telephon_icon.png" alt="" />
-          <p class="contact_receptiontime">受付時間：8時〜16時</p>
-        </div>
+        <a href="" class="contact_circle">
+          <span class="contact_text">よくある<br />ご質問</span>
+          <img class="contact_icon hatena" src="image/question_icon.png" alt="" />
+        </a>
+        <a href="" class="contact_circle">
+          <span class="contact_text">予約<br />お問い合わせ</span>
+          <img class="contact_icon" src="image/calendar.svg" alt="" />
+        </a>
+        <a href="tel:06-000-0000" class="contact_circle">
+          <span class="contact_text">電話番号</span>
+          <span class="contact_phonenumber">06-000-0000</span>
+          <img class="contact_icon" src="image/telephon_icon.png" alt="電話アイコン" />
+          <span class="contact_receptiontime">受付時間：8時〜16時</span>
+        </a>
         <img src="./image/contact_image_starwatching.png" alt="" class="contact_starwatching" />
       </div>
     </section>
 
-    <!-- about -->
+    <!-------------------- about -------------------->
     <section class="about">
       <img class="about_sun" src="./image/太陽.gif" alt="太陽" />
       <div class="about_container">
@@ -345,7 +380,7 @@
       <img src="./image/about_image_mountain.png" alt="山" class="about_mountain" />
     </section>
 
-    <!-- footer -->
+    <!---------------------- footer -------------------->
     <footer class="footer">
       <div class="footer_inner wrapper_l">
         <ul class="footer_list">
@@ -372,8 +407,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
   </body>
 </html>
