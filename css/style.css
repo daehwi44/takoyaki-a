@@ -51,7 +51,7 @@
   font-weight: 300;
   font-size: 1.528vw;
   color: #fff;
-  z-index: 100;
+  z-index: 9;
 
   position: absolute;
   bottom: 12%;
@@ -72,7 +72,7 @@
   bottom: 0%;
   left: 50%;
   transform: translateX(-50%) translateY(0);
-  z-index: 100;
+  z-index: 9;
 
   /* 改行回避 */
   white-space: nowrap;
@@ -878,6 +878,7 @@
   /* PCでは非表示 */
   .sp_photos_wrapper {
     display: flex;
+    margin-top: 16vw;
   }
 
   /* スライダー全体 */
@@ -917,7 +918,7 @@
   /*--------------------feature--------------------*/
 
   .feature {
-    margin-top: 55vw;
+    margin-top: 60vw;
   }
 
   .feature_title_image {

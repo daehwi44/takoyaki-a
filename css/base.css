@@ -79,24 +79,14 @@ img {
   padding: 0.972vw 0;
 }
 
-.header_logo {
-  width: 25.56vw;
-  height: auto;
-}
-
-.header_nav {
-  display: flex;
-  align-items: center;
-}
-
 .header_nav ul {
   display: flex;
   font-family: "Noto Sans JP";
   font-weight: bold;
+  color: #5b3e12;
 }
 
 .header_nav li {
-  color: #5b3e12;
   margin-left: 4.16vw;
   transition: 0.6s;
 }
@@ -105,10 +95,23 @@ img {
   color: #61cb90;
 }
 
+.header_logo {
+  width: 25.56vw;
+  height: auto;
+}
+
+.nav_button {
+  display: none;
+}
+
+.nav_reserve_button_area {
+  display: none;
+}
+
 /*-------------------- 予約ボタン---------------------*/
 .reserve_button_area {
   position: fixed;
-  z-index: 100;
+  z-index: 9;
   right: 5%;
   bottom: 12%;
 }
@@ -215,29 +218,112 @@ img {
   color: #fff;
 }
 
-/*------レスポンシブ対応-----*/
+/*------------------------------------------------------*/
+/*////////////////////レスポンシブ対応///////////////////*/
+/*------------------------------------------------------*/
 
 @media (max-width: 768px) {
   /* ----------ヘッダー---------- */
 
   .header {
-    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: #edeade;
+    padding: 0 5%;
+  }
+
+  .header.wrapper_xl {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    width: 100%;
   }
 
   .header_logo {
     width: 179px;
     height: auto;
-    margin: 33px 0;
+    margin: 8.8vw 0;
   }
 
-  .header_nav {
-    display: none;
+  .header_nav ul {
+    position: fixed;
+    z-index: 11;
+    top: 27vw;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    font-size: 15px;
+    color: #fff;
+    background-color: #123c64;
+    gap: 60px;
+    padding-top: 60px;
+
+    transition: 0.4s;
+    transform: translateX(100%);
+  }
+
+  .nav_open .header_nav ul {
+    transform: translateX(0);
+  }
+
+  .header_nav li {
+    margin-left: 0;
+  }
+
+  .nav_button {
+    position: relative;
+    z-index: 12;
+    display: block;
+    width: 65px;
+    height: 65px;
+    background-image: url(../image/sp_image/nav-open.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .nav_open .nav_button {
+    background-image: url(../image/sp_image/nav-close.svg);
+  }
+
+  .nav_reserve_button_area {
+    display: flex;
+    justify-content: center;
+
+    padding: 28px 37px;
+    background-color: #b57e2d;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1;
+    color: #fff;
+    border-radius: 60px;
+  }
+
+  .nav_reserve_button_icon {
+    width: 17.2px;
+    height: 17.2px;
+  }
+
+  .nav_reserve_button {
+    display: inline-block;
+    font-family: "M PLUS 1";
+    transition: 0.6s;
+    margin-left: 8px;
   }
 
   /*-------------------- 予約ボタン---------------------*/
   .reserve_button_area {
-    right: 32%;
-    bottom: 29%;
+    right: 44vw;
+    bottom: 75vw;
   }
 
   .text_circle {
