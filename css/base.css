@@ -223,6 +223,15 @@ img {
 /*------------------------------------------------------*/
 
 @media (max-width: 768px) {
+  /* ----------共通パーツ---------- */
+  .button {
+    font-size: 16px;
+    padding: 37px 67px;
+    border-radius: 44.5px;
+    margin-top: 85px;
+    margin-bottom: 80px;
+  }
+
   /* ----------ヘッダー---------- */
 
   .header {
@@ -322,8 +331,8 @@ img {
 
   /*-------------------- 予約ボタン---------------------*/
   .reserve_button_area {
-    right: 44vw;
-    bottom: 75vw;
+    right: 3vw;
+    bottom: 3vw;
   }
 
   .text_circle {
@@ -345,5 +354,64 @@ img {
 
   .reserve_image {
     margin-top: 5px;
+  }
+
+  /*--------------------footer--------------------*/
+  .footer {
+    padding-top: 0;
+    margin-top: 80px;
+  }
+
+  .footer_inner.wrapper_l {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .footer_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer_list li {
+    width: 50vw;
+    font-size: 13px;
+    padding: 26px;
+    text-align: center;
+    border-bottom: #fff solid 0.5px;
+    /* 改行回避 */
+    white-space: nowrap;
+  }
+
+  .footer_list li:nth-child(2) {
+    border-left: #fff solid 0.5px;
+  }
+
+  .footer_list li:nth-child(4) {
+    border-left: #fff solid 0.5px;
+  }
+
+  .footer_list li:nth-child(6) {
+    border-left: #fff solid 0.5px;
+  }
+
+  .footer_list a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer_logo {
+    width: 190px;
+  }
+
+  .footer_company {
+    font-size: 13px;
+  }
+
+  .footer_address {
+    font-size: 14px;
+    width: 90%;
   }
 }
