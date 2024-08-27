@@ -19,7 +19,6 @@ img {
   margin-right: auto;
   margin-left: auto;
   max-width: 88.89vw;
-  /* 100%では画面サイズをちぢめたときに横の余白が全くないので少し余白を入れるために90％くらいにする */
   width: 90%;
 }
 
@@ -117,8 +116,8 @@ img {
 }
 
 .text_circle {
-  width: 135px; /*文字サークルの大きさ*/
-  animation: rotateIt 10s linear infinite; /*文字サークルの回転の速さ*/
+  width: 135px;
+  animation: rotateIt 10s linear infinite;
 }
 
 @keyframes rotateIt {
@@ -129,11 +128,11 @@ img {
 
 .text_circle text {
   font-size: 42.5px;
-  fill: #fff; /*文字の色*/
+  fill: #fff;
 }
 
 .text_circle textPath {
-  letter-spacing: -2px; /*文字の余白*/
+  letter-spacing: -2px;
 }
 
 .reserve_circle {
@@ -172,6 +171,7 @@ img {
   background-color: #123c64;
   margin-top: 11.11vw;
   padding: 7.639vw 0 4.861vw;
+  font-family: "M PLUS 1";
 }
 
 .footer_list {
@@ -218,10 +218,6 @@ img {
   color: #fff;
 }
 
-/*------------------------------------------------------*/
-/*////////////////////レスポンシブ対応///////////////////*/
-/*------------------------------------------------------*/
-
 @media (max-width: 768px) {
   /* ----------共通パーツ---------- */
   .button {
@@ -262,7 +258,7 @@ img {
 
   .header_nav ul {
     position: fixed;
-    z-index: 11;
+    z-index: 100;
     top: 27vw;
     left: 0;
     display: flex;
@@ -333,14 +329,15 @@ img {
   .reserve_button_area {
     right: 3vw;
     bottom: 3vw;
+    z-index: 90;
   }
 
   .text_circle {
-    width: 110px; /*文字サークルの大きさ*/
+    width: 110px;
   }
 
   .text_circle textPath {
-    letter-spacing: -2px; /*文字の余白*/
+    letter-spacing: -2px;
   }
 
   .reserve_circle {
@@ -385,15 +382,15 @@ img {
     white-space: nowrap;
   }
 
-  .footer_list li:nth-child(2) {
+  .footer_list a:nth-child(2) {
     border-left: #fff solid 0.5px;
   }
 
-  .footer_list li:nth-child(4) {
+  .footer_list a:nth-child(4) {
     border-left: #fff solid 0.5px;
   }
 
-  .footer_list li:nth-child(6) {
+  .footer_list a:nth-child(6) {
     border-left: #fff solid 0.5px;
   }
 
